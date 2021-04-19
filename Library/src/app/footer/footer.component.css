@@ -1,0 +1,19 @@
+footer {
+    text-align: center;
+    color: #fffffe;
+    padding: 1rem;
+    /* position: fixed; */
+    bottom: 0;
+    /* width: 100%; */
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: medium;
+    text-align: center;
+}
+
+b {
+    font-weight: 400;
+}

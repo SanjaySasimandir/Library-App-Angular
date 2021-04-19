@@ -1,0 +1,15 @@
+.nav-bg-color {
+    background-color: #6243be;
+    border-bottom-left-radius: 3rem;
+}
+
+.brand-styling {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: xx-large;
+    padding-left: 1rem;
+}
+
+b {
+    font-weight: 400;
+}

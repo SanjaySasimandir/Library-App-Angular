@@ -1,0 +1,38 @@
+<div class="container" style="padding-top: 3rem;">
+    <div class="row">
+        <div class="col-12" style="padding: 1rem; background-color: #fffffe; border-left: 10px solid #6243be;">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-12 col-sm-9 align-items-center" style="padding-left: 3rem;">
+
+                    <div class="col-xs-9" style="padding-top: 0.5rem;">
+                        <img alt="" [src]="author.img" style="width: 200px; justify-content: center;" class="">
+                        <h3 class="topic-name" style="padding-top: 0.5rem;">
+                            {{author.name}}
+                        </h3>
+                        <h5 class="author-name">
+                            {{author.topic}}
+                        </h5>
+                        <br>
+                        <h5 style="padding-top: 0.5rem; font-size: smaller;">Born: {{author.yob}}
+                        </h5>
+                        <h5 style="font-weight: lighter; font-family: 'Lato', sans-serif;">About the author:</h5>
+                        <h5 class="description">
+                            {{author.life}}
+                        </h5>
+                        <br>
+                        <h5>Publications:</h5>
+                        <ul>
+                                <li *ngFor="let book of author.books" style="font-family: 'Karla', sans-serif;">
+                                    {{book}}
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+</div>

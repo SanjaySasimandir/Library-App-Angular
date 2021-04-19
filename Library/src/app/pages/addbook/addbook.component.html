@@ -1,0 +1,60 @@
+<div class="container" style="padding-top: 3rem;">
+    <div class="row">
+        <div class="col-12" style="padding: 1rem; background-color: #fffffe;">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <h3 class="topic-name" style="text-align: center; padding: 1rem;">Add Book</h3>
+
+                    <form (ngSubmit)="submit()">
+
+                        <div class="form-group row">
+                            <div class="col-md-6" style="padding-top: 1rem;">
+                                <label for="tag" style="padding-left: 0.5rem;">Title:</label>
+                                <input class="form-control roundBorder" type="text" [(ngModel)]="book.title"
+                                    placeholder="Enter title of the book" name="title" required>
+                            </div>
+                            <div class="col-md-6" style="padding-top: 1rem;">
+                                <label for="tag" style="padding-left: 0.5rem;">Rating (out of 5):</label>
+                                <input class="form-control roundBorder" type="number" [(ngModel)]="book.rating"
+                                    placeholder="Enter rating of the book" name="rating" min="0" [max]="5" required>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6" style="padding-top: 1rem;">
+                                <label for="tag" style="padding-left: 0.5rem;">Genre:</label>
+                                <input class="form-control roundBorder" type="text" [(ngModel)]="book.genre"
+                                    placeholder="Enter genre of the book" name="genre" required>
+                            </div>
+                            <div class="col-md-6" style="padding-top: 1rem;">
+                                <label for="tag" style="padding-left: 0.5rem;">Image:</label>
+                                <input class="form-control roundBorder" type="text" [(ngModel)]="book.img"
+                                    placeholder="Enter image url of the book" name="image" required>
+                            </div>
+                        </div>
+                        <label for="tag" style="padding-left: 0.5rem;">Author:</label>
+                        <div class="form-group">
+
+                            <input class="form-control roundBorder" type="text" [(ngModel)]="book.author"
+                                placeholder="Enter name of the author" name="author" required>
+
+                        </div>
+                        <label for="tag" style="padding-left: 0.5rem;">Description:</label>
+                        <div class="form-group">
+
+                            <textarea class="form-control roundBorder" name="description" id="" cols="30" rows="5"
+                                style="width: 100%;" [(ngModel)]="book.description"
+                                placeholder="Enter description of the book" required></textarea>
+
+                        </div>
+
+                        <input class="btn btn-block roundBorder"
+                            style="margin-top: 10px; background-color: #6243be; color: #fffffe; font-family: 'Montserrat', sans-serif;"
+                            type="submit" value="Add Book">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
