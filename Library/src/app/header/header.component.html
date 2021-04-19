@@ -8,12 +8,12 @@
         <ul class="d-flex align-items-end navbar-nav ml-lg-auto jump">
             <li class="nav-item"><a class="nav-link" routerLinkActive="selected-header" routerLink="/books">Books</a></li>
             <li class="nav-item"><a class="nav-link" routerLinkActive="selected-header" routerLink="/authors">Authors</a></li>
-            <li class="nav-item"><a class="nav-link" *ngIf="logged_in" routerLinkActive="selected-header" routerLink="/addbook">Add Book</a></li>
-            <li class="nav-item"><a class="nav-link" *ngIf="logged_in" routerLinkActive="selected-header" routerLink="/addauthor">Add Author</a></li>
-            <li class="nav-item"><a class="nav-link" *ngIf="logged_in" routerLinkActive="selected-header" routerLink="/edit">Edit</a></li>
-            <li class="nav-item"><a class="nav-link" *ngIf="!logged_in" routerLinkActive="selected-header" routerLink="/login">Login</a></li>
-            <li class="nav-item"><a class="nav-link" *ngIf="!logged_in" routerLinkActive="selected-header" routerLink="/register">Register</a></li>
-            <li class="nav-item"><a class="nav-link" *ngIf="logged_in">Log Out</a></li>
+            <li class="nav-item"><a class="nav-link" *ngIf="auth.loggedin()" routerLinkActive="selected-header" routerLink="/addbook">Add Book</a></li>
+            <li class="nav-item"><a class="nav-link" *ngIf="auth.loggedin()" routerLinkActive="selected-header" routerLink="/addauthor">Add Author</a></li>
+            <li class="nav-item"><a class="nav-link" *ngIf="auth.loggedin()" routerLinkActive="selected-header" routerLink="/edit">Edit</a></li>
+            <li class="nav-item"><a class="nav-link" *ngIf="!auth.loggedin()" routerLinkActive="selected-header" routerLink="/login">Login</a></li>
+            <li class="nav-item"><a class="nav-link" *ngIf="!auth.loggedin()" routerLinkActive="selected-header" routerLink="/register">Register</a></li>
+            <li class="nav-item"><a class="nav-link log-out" *ngIf="auth.loggedin()" (click)="logout()">Log Out</a></li>
         </ul>
     </div>
 </nav>

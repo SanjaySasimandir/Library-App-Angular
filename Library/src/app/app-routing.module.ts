@@ -11,10 +11,12 @@ import { BookeditComponent } from './pages/bookedit/bookedit.component';
 import { BooksComponent } from './pages/books/books.component';
 import { BookseditComponent } from './pages/booksedit/booksedit.component';
 import { EditComponent } from './pages/edit/edit.component';
+import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'books', component: BooksComponent },
   { path: 'authors', component: AuthorsComponent },
   { path: 'addbook', component: AddbookComponent },

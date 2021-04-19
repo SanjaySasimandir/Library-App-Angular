@@ -23,4 +23,8 @@ export class AuthorsService {
   deleteAuthor(id: any) {
     return this.http.post<any>('http://localhost:5555/authors/deleteauthor', { "id": id });
   }
+
+  updateAuthor(data: any) {
+    return this.http.post<any>('http://localhost:5555/authors/updateauthor', data);
+  }
 }

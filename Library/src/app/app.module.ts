@@ -20,6 +20,7 @@ import { BookComponent } from './pages/book/book.component';
 import { AuthorComponent } from './pages/author/author.component';
 import { BookseditComponent } from './pages/booksedit/booksedit.component';
 import { AuthorseditComponent } from './pages/authorsedit/authorsedit.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AuthorseditComponent } from './pages/authorsedit/authorsedit.component'
     BookComponent,
     AuthorComponent,
     BookseditComponent,
-    AuthorseditComponent
+    AuthorseditComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
