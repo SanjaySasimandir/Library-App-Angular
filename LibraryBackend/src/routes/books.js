@@ -43,7 +43,7 @@ BooksRouter.post('/deletebook', function (req, res) {
 
 // End - Code for Deleting Books
 
-// Start - Code for Deleting Books
+// Start - Code for Updating Books
 
 BooksRouter.post('/updatebook', function (req, res) {
     
@@ -57,6 +57,6 @@ BooksRouter.post('/updatebook', function (req, res) {
 
 });
 
-// End - Code for Deleting Books
+// End - Code for Updating Books
 
 module.exports = BooksRouter;

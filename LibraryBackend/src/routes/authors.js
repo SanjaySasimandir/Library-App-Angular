@@ -44,4 +44,20 @@ AuthorsRouter.post('/deleteauthor', function (req, res) {
 
 // End - Code for Adding Authors
 
+// Start - Code for Updating Authors
+
+AuthorsRouter.post('/updateauthor', function (req, res) {
+    
+
+    AuthorsData.findByIdAndUpdate(req.body._id, req.body, function (err, result) {
+        if (err) console.log(err)
+        else {
+            res.send({ "message": "success" });
+        }
+    });
+
+});
+
+// End - Code for Updating Authors
+
 module.exports = AuthorsRouter;

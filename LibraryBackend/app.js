@@ -17,6 +17,9 @@ app.use('/books', BooksRouter);
 const AuthorsRouter = require('./src/routes/authors');
 app.use('/authors', AuthorsRouter);
 
+const LoginRouter = require('./src/routes/login');
+app.use('/users', LoginRouter);
+
 app.get('/', function (req, res) {
     res.send('yes');
 });
